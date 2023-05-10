@@ -1,38 +1,175 @@
+/* 
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #f5f5f5;
+}
+
 .App {
-  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 40px 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.addUser {
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 100%;
+}
+
+.addUser input,
+.displayUsers input {
+  width: 100%;
+  padding: 10px;
+  margin: 5px 0;
+  border: none;
+  background-color: #ffffff;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.addUser button,
+.displayUsers button {
+  padding: 10px 20px;
+  margin: 10px 0;
+  border: none;
+  background-color: #3f51b5;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.addUser button:hover,
+.displayUsers button:hover {
+  background-color: #303f9f;
+}
+
+.displayUsers {
+  margin-top: 20px;
+  width: 100%;
+}
+
+.displayUsers div {
+  width: 100%;
+  padding: 20px;
+  margin: 20px 0;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  background-color: #ffffff;
+}
+
+.displayUsers h1 {
+  font-size: 24px;
+  font-weight: bold;
+  margin: 5px 0;
+}
+
+.displayUsers button {
+  width: 100%;
+} */
+/* ------------------------------------------------------------------- */
+
+/* .App {
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
+  flex-direction: column;
+}
+
+.displayUsers {
+  margin-top: 20px;
+}
+
+.displayUsers div {
+  width: 400px;
+  height: 150px;
+  padding: 20px;
+  margin: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  text-align: center;
+} */
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #f5f5f5;
+}
+
+.App {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  max-width: 600px; /* reduced max-width */
+  margin: 0 auto;
+  padding: 40px 0;
+}
+
+.addUser {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.addUser input,
+.displayUsers input {
+  width: 80%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.addUser button,
+.displayUsers button {
+  padding: 10px 20px;
+  margin: 10px 0;
+  border: none;
+  background-color: #008cba;
   color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 80%; /* set width to match input fields */
 }
 
-.App-link {
-  color: #61dafb;
+.addUser button:hover,
+.displayUsers button:hover {
+  background-color: #007b9a;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.displayUsers {
+  margin-top: 20px;
+  width: 100%;
+}
+
+.displayUsers div {
+  width: 80%; /* set to 100% so it fits within the .App container */
+  height: auto; /* set to auto so it only takes up necessary space */
+  margin: 0 auto;
+  margin-bottom: 2rem; /* only apply vertical margins */
+  border-radius: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  background-color: #f8f8f8;
+  text-align: center;
+}
+
+.displayUsers h1 {
+  margin: 5px 0;
+  color: #333;
+}
+
+.displayUsers button {
+  width: 80%; /* set width to match input fields */
 }
